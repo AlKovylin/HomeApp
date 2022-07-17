@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HomeApp"
+             x:Class="HomeApp.Pages.LoginPage"
+             NavigationPage.HasNavigationBar="False">
+    
+    <!--<StackLayout VerticalOptions="Center" HorizontalOptions="Center">
+        <Label Text="HomeApp - Ваш умный дом" FontSize="Title" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Button x:Name="loginButton" Text="Войти" Clicked="Login_Click" />
+    </StackLayout>-->
+
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" x:Name="stackLayout">
+        <Label Text="HomeApp - Ваш умный дом" FontSize="Title" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" 
+               TextColor="{local:RgbExtension Red=100, Green=200, Blue=50}" />
+        <Button x:Name="loginButton" Text="{x:Static local:Pages.LoginPage.BUTTON_TEXT}" Clicked="Login_Click" 
+                CornerRadius="{local:ButtonViewExtension ButtonStyle=SemiRound}" />
+        <Label x:Name="infoMessage" FontSize="Small" TextColor="Red" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+        <Label x:Name="runningDevice" FontSize="15" Padding="30,10,30,10" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+    </StackLayout>
+</ContentPage>
